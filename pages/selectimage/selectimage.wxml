@@ -1,0 +1,11 @@
+
+<view class='imglist-allcon'>
+<radio-group name="canjileixing" bindchange="radioChange1" class="imglist-con">
+  <label wx:for="{{ selimglist }}" wx:key="{{ item.value }}" data-id="{{item.value}}">
+    <radio value="{{ item.value }}" checked="{{ item.checked }}" />
+      <image src='{{item.imgurl}}'></image>
+  </label>
+</radio-group>
+
+</view>
+<view class='selimgsub' bindtap='selimgsub'>选择完成</view>

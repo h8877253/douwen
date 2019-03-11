@@ -1,0 +1,16 @@
+<template name="item">
+  <view class="item" data-id="{{id}}">
+    <image class="item-img" src="{{url}}" mode="widthFix"></image>
+    <view class="item-title-box">
+      <navigator url="url" class="item-title">{{title}}</navigator>
+    </view>
+    <view class="name">
+      <view class="name-title">{{name}}</view>
+      <view class="heart_">{{time}} </view>
+    </view>
+    <view class='islike'>
+      <image catchtap='onCollectionTap' wx:if="{{islike}}" id="{{id}}" src="../../images/icon/shouchang-on.png"></image>
+      <image wx:else catchtap='onCollectionTap' id="{{id}}" src="../../images/icon/shouchang-off.png"></image>
+    </view>
+  </view>
+</template>

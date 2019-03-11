@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="userinfo">
+
+    <view class='userInfo-center'>
+      <image class="userinfo-avatar" src="{{hasUserInfo ? userInfo.avatarUrl : '../../images/icon/lizi.png'}}" mode="cover"></image>
+      <view class="userinfo-nickname">{{logged ? userInfo.nickName : ''}}</view>
+      <view class='PTbtn blue-btn'>新手入门</view>
+      <view class='PTbtn white-btn'>获取经验</view>
+    </view>
+  </view>
+  <view class="user-list">
+    <view class="user-list-item" wx:for="{{mycenterlist}}" wx-item="item" bindtap='mycenterTarget' data-id="{{item.id}}">
+      <image class="user-list-icon" src="{{item.imgurl}}" />
+      <text class="user-list-title">{{item.mycentertitle}}</text>
+      <icon class='iconfont icon-right'></icon>
+    </view>
+        <view class="user-list-item">
+      <image class="user-list-icon" src="../../images/icon/fenxiangdouwen.png" />
+      <text class="user-list-title">分享抖文</text>
+      <icon class='iconfont icon-right'></icon>
+    </view>
+  </view>
+</view>

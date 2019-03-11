@@ -1,0 +1,73 @@
+page {
+    background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  padding-bottom: 40rpx;
+}
+.userinfo {
+    width: 100%;
+    background: #FFF;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 300ms ease;
+    text-align: center;padding-bottom: 20rpx;
+}
+.userInfo-center{width: 400rpx;margin: 0 auto;text-align: center;}
+.PTbtn{display: inline-block;padding: 0 20rpx;height: 50rpx;line-height: 50rpx;font-size: 28rpx;border-radius: 25rpx;}
+.blue-btn{background: #4585C5;color: #FFF;margin-right: 10rpx;}
+.white-btn{background: #FFF;color: #4585C5;border: 1px solid #4585C5;margin-left: 10rpx;}
+.userinfo-avatar {
+    width: 180rpx;
+    height: 180rpx;
+
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+  height: 60rpx;line-height: 60rpx;
+    font-size: 36rpx;
+    color: #323233;
+}
+.userinfo-tip{
+  color: #cdcdcd;
+  font-size: 24rpx;
+}
+.user-list{
+  width: 750rpx;
+  margin-top: 20rpx;
+  text-align: left;
+  border-left: none;
+  border-right: none;
+  background: #FFF;
+  padding: 8rpx 0;
+}
+.user-list-item{
+  max-width: 750rpx; 
+  position: relative;
+  padding: 20rpx;
+}
+.user-list-icon{
+  width: 50rpx;
+  height: 50rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20rpx;
+  border-radius: 10rpx;
+}
+.user-list-item .iconfont{float: right;color: #DDDDDD;}
+
+
+
+ .user-list-title{
+  font-size: 28rpx;
+  color: #666666;
+  display: inline-block;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 560rpx;
+} 

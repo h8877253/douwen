@@ -1,0 +1,44 @@
+
+<!--pages/index/index.wxml-->
+<view class="swiper-tab">
+    <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">好友排行</view>
+    <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">世界排行</view>
+</view>
+ 
+<swiper current="{{currentTab}}" class="swiper" duration="300" style="height:{{winHeight - 30}}px" bindchange="bindChange">
+    <swiper-item>
+    <view wx:for="{{ranklist}}" wx-item="item" class='ranklist'>
+      <view class='rankhead'>
+        <image src="{{item.namehead}}"></image>
+      </view>
+      <view class='rank-detail'>
+        <view>
+          <text class='rank-name'>{{item.name}}</text>
+          <text class='suffer'>经验值：{{item.suffer}}</text>
+        </view>
+        <view>
+          <text class='nametitle'>{{item.nametitle}}</text>
+          <text class='address'>{{item.address}}</text>
+        </view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+    <view wx:for="{{ranklist}}" wx-item="item" class='ranklist'>
+      <view class='rankhead'>
+        <image src="{{item.namehead}}"></image>
+      </view>
+      <view class='rank-detail'>
+        <view>
+          <text class='rank-name'>{{item.name}}</text>
+          <text class='suffer'>经验值：{{item.suffer}}</text>
+        </view>
+        <view>
+          <text class='nametitle'>{{item.nametitle}}</text>
+          <text class='address'>{{item.address}}</text>
+        </view>
+        </view>
+      </view>
+    </swiper-item>
+
+</swiper>

@@ -1,0 +1,52 @@
+{
+  "pages": [
+        "pages/selectlabelindex/selectlabelindex",
+    "pages/sendquotes/sendquotes",
+
+    "pages/index/index",
+    "pages/selectimage/selectimage",
+    "pages/selectlabel/selectlabel",
+    "pages/quotes/quotes",
+    "pages/test/test",
+    "pages/mycenter/mycenter",
+    "pages/gotag/gotag",
+    "pages/mycollect/mycollect",
+    "pages/myranking/myranking",
+    "pages/login/login",
+    "pages/canvas/canvas",
+    "pages/calendar/calendar"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "抖文",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabBar/shouye-off.png",
+        "selectedIconPath": "images/tabBar/shouye-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/quotes/quotes",
+        "iconPath": "images/tabBar/mingyan-off.png",
+        "selectedIconPath": "images/tabBar/mingyan-on.png",
+        "text": "名言"
+      },
+      {
+        "pagePath": "pages/mycenter/mycenter",
+        "iconPath": "images/tabBar/wode-off.png",
+        "selectedIconPath": "images/tabBar/wode-on.png",
+        "text": "我的"
+      }
+    ],
+    "backgroundColor": "#FFFFFF",
+    "selectedColor": "#4787C6",
+    "color": "#333",
+    "borderStyle": "white",
+    "position": "bottom"
+  }
+}

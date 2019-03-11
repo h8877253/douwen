@@ -1,0 +1,16 @@
+page{background: #F3F3F3;}
+radio .wx-radio-input{
+border-radius: 20rpx;
+height: 40rpx;
+width: 40rpx;
+background: rgba(0, 0, 0, .4);
+border: 0;
+
+}
+.imglist-allcon{padding:25rpx;box-sizing: border-box;}
+
+.imglist-con label{display: inline-block;width: 160rpx;height: 160rpx;position: relative;margin: 0 20rpx 20rpx 0;}
+.imglist-con label:nth-child(4n){margin-right: 0;}
+.imglist-con label radio{position: absolute;top: 0;right: 0;}
+.imglist-con label image{width: 160rpx;height: 160rpx;}
+.selimgsub{position: fixed;bottom: 0;height: 100rpx;line-height: 100rpx;color: #4585C5;background: #FFF;text-align: center;display: block;width: 100%;}

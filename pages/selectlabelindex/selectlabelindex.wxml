@@ -1,0 +1,38 @@
+<view class="container container-gray">
+  <view class='title-label'>选择您感兴趣的兴趣标签吧！</view>
+  <view class='title-text'>抖文私人订制随时可更改</view>
+  <view class='group-bodycon'>
+    <view class="group-body" wx:for="{{GetFavLabelSign}}" wx:key="{{item.id}}" data-text="{{item.labelSign}}">
+      <view class="grouplist" wx:if="{{index == 0}}">
+        <view class="header-title header-ver1">
+          <image src='../../images/icon/heian.png'></image>
+          <text>{{item.labelSign}}</text>
+        </view>
+        <view class="multiple-select">
+          <button wx:for="{{GetLabelList}}" wx:for-item="ele" wx:key="{{ele.id}}" wx:if="{{ele.labelSign == item.labelSign}}" data-id="{{ele.id}}" bindtap="onSelectdiabloTag" class="{{ele.isSelected ? 'active1' : ''}}" disabled="{{ele.isEnabled}}">{{ele.labelText}}</button>
+        </view>
+      </view>
+      <view class="grouplist" wx:if="{{index == 1}}">
+        <view class="header-title header-ver2">
+          <image src='../../images/icon/guangming.png'></image>
+          <text>{{item.labelSign}}</text>
+        </view>
+        <view class="multiple-select">
+          <button wx:for="{{GetLabelList}}" wx:for-item="ele" wx:key="{{ele.id}}" wx:if="{{ele.labelSign == item.labelSign}}" data-id="{{ele.id}}" bindtap="onSelectdiabloTag" class="{{ele.isSelected ? 'active2' : ''}}" disabled="{{ele.isEnabled}}">{{ele.labelText}}</button>
+        </view>
+      </view>
+      <view class="grouplist" wx:if="{{index == 2}}">
+        <view class="header-title header-ver3">
+          <image src='../../images/icon/jinneg.png'></image>
+          <text>{{item.labelSign}}</text>
+        </view>
+        <view class="multiple-select">
+          <button wx:for="{{GetLabelList}}" wx:for-item="ele" wx:key="{{ele.id}}" wx:if="{{ele.labelSign == item.labelSign}}" data-id="{{ele.id}}" bindtap="onSelectdiabloTag" class="{{ele.isSelected ? 'active3' : ''}}" disabled="{{ele.isEnabled}}">{{ele.labelText}}</button>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-submit" bindtap='selectlableTarget'>
+    确定
+  </view>
+</view>

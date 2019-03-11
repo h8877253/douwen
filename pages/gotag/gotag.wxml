@@ -1,0 +1,11 @@
+<view></view>
+<view class='title-label'>选择您感兴趣的兴趣标签吧！</view>
+<view class='title-text'>抖文私人订制随时可更改</view>
+<view class="Grid">
+  <view class="Grid-cell" wx:for="{{biaoqian}}" wx-item="item" data-index='{{item.id}}' bindtap='checkboxChange'>
+    <image src='{{item.image}}'></image>
+    <checkbox value='{{item.id}}' checked='{{item.checked}}' class='check-box'></checkbox>
+    <text>{{item.imagetext}}</text>
+  </view>
+</view>
+<button bindtap='biaoqiansub' class='biaoqiansub'>确定</button>

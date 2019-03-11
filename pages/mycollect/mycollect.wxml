@@ -1,0 +1,13 @@
+<import src="../../template/list.wxml" />
+<view class="content" bindtap='quotesDetails'>
+      <view class="left">
+        <block wx:for="{{note}}" wx:key="">
+          <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+        </block>
+      </view>
+      <view class="right">
+        <block wx:for="{{note}}" wx:key="">
+          <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+        </block>
+      </view>
+ </view>

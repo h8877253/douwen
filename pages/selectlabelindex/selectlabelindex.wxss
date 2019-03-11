@@ -1,0 +1,22 @@
+page{background: #F3F3F3;}
+.group-body{width: 100%;}
+.grouplist{width: 100%;margin-bottom:60rpx;}
+.title-label{color: #333;font-size: 42rpx;text-align: left;width: 100%;height: 100rpx;line-height: 100rpx;text-indent: 20rpx;font-weight: 500;}
+.title-text{color: #B0B0B0;font-size: 32rpx;text-align: left;width: 100%;height: 120rpx;text-indent: 20rpx;}
+.header-title{width: 150rpx;height: 150rpx;display: inline-block;
+text-align:center;font-size: 28rpx;}
+.header-ver1{color: #333;}
+.header-ver2{color: #FFB400;}
+.header-ver3{color: #4585C5;}
+.header-title image{width: 66rpx;height: 66rpx;display: block;margin: 0 auto;}
+.multiple-select{width: 600rpx;display: inline-block;}
+.multiple-select view{display: inline-block;}
+.multiple-select button{height: 60rpx;border-radius: 40rpx;line-height: 56rpx;padding: 0 32rpx;font-size: 32rpx;margin:0 20rpx 20rpx 0;display:inline-block}
+.multiple-select button:nth-child(4n){margin-right: 0;}
+ .group-bodycon .group-body:nth-child(1) .grouplist .multiple-select  button{color: #333;border: 1px solid #333;}
+ .group-bodycon .group-body:nth-child(2) .grouplist .multiple-select  button{color: #FFB400;border: 1px solid #FFB400;}
+ .group-bodycon .group-body:nth-child(3) .grouplist .multiple-select  button{color: #4585C5;border: 1px solid #4585C5;}
+ .group-bodycon .group-body:nth-child(1) .grouplist .multiple-select  .active1{background: #333;color: #FFF;}
+ .group-bodycon .group-body:nth-child(2) .grouplist .multiple-select  .active2{background: #FFB400;color: #FFF;}
+ .group-bodycon .group-body:nth-child(3) .grouplist .multiple-select  .active3{background: #4585C5;color: #FFF;}
+ .btn-submit{position: fixed;left: 0;bottom: 0;width: 100%;height: 100rpx;line-height: 100rpx;background: #FFF;color: #4585C5;text-align: center;}

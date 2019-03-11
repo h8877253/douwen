@@ -1,0 +1,44 @@
+page{padding-top: 100rpx;}
+.swiper-tab{
+    width: 100%;  
+    text-align: center;  
+    line-height: 100rpx;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100rpx;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    z-index: 99
+}
+.tab-item{
+    flex: 1;
+    font-size: 30rpx;  
+    display: inline-block;   
+    color: #777777;
+}
+.on{
+    color: #4585C5;  
+    border-bottom: 5rpx solid #4585C5;
+}
+.swiper{ display: block; height: 100%; width: 100%; overflow: hidden;
+ }  
+  
+.ranklist{height: 150rpx;width: 100%;padding: 25rpx;box-sizing: border-box;}
+.rankhead{width: 100rpx;height: 100rpx;display: inline-block;}
+.rankhead image{width: 100rpx;height: 100rpx;border-radius: 10rpx;}
+.rank-detail{width: 580rpx;height: 100rpx;float: right;}
+.rank-detail>view{height: 50rpx;line-height: 50rpx;}
+.rank-detail>view text:nth-child(2){float: right;}
+.rank-name{color: #333;font-size: 32rpx;}
+.nametitle{background: #4585C5;color: #FFF;font-size: 28rpx;height: 40rpx;padding:5rpx 20rpx;border-radius: 20rpx;  }
+.suffer,.address{color: #C6C6C6;font-size: 28rpx;}
+.swiper swiper-item .ranklist:nth-child(1) .nametitle{background: #FFC000;}
+.swiper swiper-item .ranklist:nth-child(2) .nametitle{background: #30DC51;}
+.swiper swiper-item .ranklist:nth-child(3) .nametitle{background: #30DC51;}
+.swiper swiper-item .ranklist:nth-child(4) .nametitle{background: #E281FE;}
+.swiper swiper-item .ranklist:nth-child(5) .nametitle{background: #E281FE;}
+.swiper swiper-item .ranklist:nth-child(6) .nametitle{background: #E281FE;}
+

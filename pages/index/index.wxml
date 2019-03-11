@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='details-img'>
+    <image src='../../images/icon/lizi.png'></image>
+  </view>
+
+  <view class='details-text'>
+    <view>2018 / 07 /16</view>
+    <text>我过去，那死党，早晚共对；各也扎职以后，
+    没法畅聚。而终於，相约到，但无言共对，疏淡如水。
+    日夜做，见爸爸，刚好想呻；却霎眼，看出他，多了皱纹。而他的苍老感，是从来未觉太内疚担心。最心痛是，爱得太迟。有些心意，不可等某个日子。</text>
+  </view>
+
+  <view class='editorinfo'>
+
+    <view class='editorinfo-head'>
+      <image src='../../images/icon/lizi.png'></image>
+      <text>黄建杰</text>
+    </view>
+
+    <view class='editorbtn' bindtap="editorbtn">
+      <icon class='iconfont icon-ziyuanbaosongshenqingshujuxiugai'></icon>编辑</view>
+    <view class='share' bindtap='quotesshareshow'>
+      <icon class='iconfont icon-iconfontfenxiang2'></icon>
+    </view>
+  </view>
+</view>
+<view class="sharemask {{quotesshareisshow ? '' : 'quotesshareisshow'}}">
+  <view class='sharemask-con'>
+    <view class='sharemask-title'>分享抖文</view>
+    <view class='share-weixin'><image src='../../images/icon/weixn.png'></image>微信</view>
+    <view class='share-friend'><image src='../../images/icon/pengyouquan.png'></image>朋友圈</view>
+    <button class='quotessharehide' bindtap='quotessharehide'>关闭</button>
+  </view>
+</view>

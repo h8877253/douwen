@@ -1,0 +1,58 @@
+<!--pages/sendquotes/sendquotes.wxml-->
+
+<view class='sen-content'>
+  <view class="tui-content">
+    <image class="tui-preview-img" mode="aspectFill" wx:if="{{previewImageArr}}" data-src="{{previewImageArr}}" src="{{previewImageArr}}" bindtap="previewImage"></image>
+    <view bindtap="previewImage" wx:else>
+      <icon class='iconfont icon-buoumaotubiao47'></icon>
+      <view class='addupload'>添加图片</view>
+    </view>
+  </view>
+  <view class='edite-con'>
+    <view class='send-qtime'>{{tadytime}}</view>
+
+    <textarea wx:if="{{istextarea}}" bindinput="SaveInputVaule" value='{{saveInputVaule}}' placeholder="写上你想说的话，或选择换一条系统为您随机生成..." placeholder-style="color:#C6C6C6;font-size:30rpx;" />
+    <textarea wx:else></textarea>
+    <view class='selectLabel'>
+      <button class='huan-btn huanyitiao'>
+        <icon class='iconfont icon-fanhui'></icon>换一条</button>
+      <button class='huan-btn xuanbiaoqian' bindtap='selectlabelTarget'>
+        <icon class='iconfont icon-biaoqian1'></icon>
+        <text class='isselLabel'>{{isselLabel ? "选标签" : ""}}</text>
+        <text wx:for='{{selLabelData}}' wx:key='{{item.id}}' wx:key='{{item.id}}' data-id='{{item.id}}'>{{item.text}}</text>
+      </button>
+    </view>
+  </view>
+  <view class='send'>
+    <view class="send-head">
+      <image src='../../images/icon/lizi.png'></image>
+      <text>别斯林</text>
+    </view>
+    <view class='send-btn' bindtap='senddouwen'>
+      <icon class='iconfont icon-biaoqian1'></icon>抖文
+    </view>
+  </view>
+</view>
+<!-- <view class='share' bindtap='quotesshareshow'>
+      <icon class='iconfont icon-iconfontfenxiang2'></icon>
+    </view> -->
+<view class="sendselectmask {{sendmaskisshow ? '' : 'sendmaskisshow'}}" bindtap='hidesenddouwen'>
+  <view class='sendselect-con'>
+    <image src='../../images/icon/xinjiandouwen.png'></image>
+    <text>选择公开上传，抖文可能被系统推荐到发现中与大家一起分享您的抖文</text>
+    <view class='send-btn2 gongkia' bindtap='gongkaiupload'>公开上传</view>
+    <view class='send-btn2 simi' bindtap='simiupload'>私密上传</view>
+  </view>
+</view>
+
+
+<view class="sharemask {{quotesshareisshow ? '' : 'quotesshareisshow'}}">
+  <view class='sharemask-con'>
+    <view class='sharemask-title'>选择图片类型</view>
+    <view class='share-weixin' bindtap='selectimgTarget'>
+      <image src='../../images/icon/suijitupian.png'></image>随机图片</view>
+    <view class='share-friend' bindtap='changePreviewBtn'>
+      <image src='../../images/icon/xianzetupian.png'></image>选择图片</view>
+    <button class='quotessharehide' bindtap='quotessharehide'>关闭</button>
+  </view>
+</view>
